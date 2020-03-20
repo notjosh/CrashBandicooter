@@ -16,6 +16,43 @@ Download it [here](https://p199.p4.n0.cdn.getcloudapp.com/items/p9uKZDdw/CrashBa
 
 Build, run, off you go. No package manager or anything.
 
+## Notes
+
+If you want to extract the assets yourself, here's what it looked like for me.
+
+### Tools
+
+The main one is `icoutils`, which gives us the `wrestool` command. I have Imagemagick and `ffmpeg` on hand for noodlin' around too.
+
+```bash
+brew install icoutils
+```
+
+### Extract Assets
+
+```bash
+wrestool -x -o ./wres crash.exe         # extracts the BMPs, but doesn't know how to handle the WAVs
+wrestool -x --raw -o ./wres crash.exe   # extracts the WAVs, but doesn't transform the BMPs
+```
+
+### Generate Transparent `.png`s
+
+```bash
+convert ./crash.exe_2_3000_2057.bmp ./crash.exe_2_3000_2057.png                                           # extract into PNG
+convert ./crash.exe_2_3000_2057.png -colorspace sRGB -transparent 'srgb(252, 4, 252)' ./transparent.png   # convert background into transparency
+
+mkdir tiles
+magick ./transparent.png -crop 152x150 tiles/tile%04d.png                                                 # extract each frame into a tile
+```
+
+### Bonus Fun: Create Movie
+
+(note, this will bring the pink background back, because the video doesn't know how to transparency. Fool!)
+
+```bash
+ffmpeg -r 12 -f image2 -s 152x150 -i tiles/tile%04d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p clip.mp4
+```
+
 ## Thanks
 
 Internets!!
