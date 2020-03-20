@@ -8,6 +8,10 @@ Inspired by [this tweet](https://twitter.com/ticky/status/1240078387256803328), 
 
 Download it [here](https://p199.p4.n0.cdn.getcloudapp.com/items/WnuN6vN1/CrashBandicooter.app.zip?v=570aee803a0ef2c037242b8a8a3b198b)!
 
+## Requirements
+
+- macOS 10.13
+
 ## Contributing
 
 Build, run, off you go. No package manager or anything.
