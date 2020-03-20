@@ -11,6 +11,15 @@
 		427183022424E0C700E9138E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427183012424E0C700E9138E /* ViewController.swift */; };
 		427183042424E0CC00E9138E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427183032424E0CC00E9138E /* Assets.xcassets */; };
 		427183072424E0CC00E9138E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427183052424E0CC00E9138E /* Main.storyboard */; };
+		427183102424E3DE00E9138E /* CrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4271830F2424E3DE00E9138E /* CrashView.swift */; };
+		427183122424E56B00E9138E /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = 427183112424E56B00E9138E /* tiles */; };
+		427183142424E8A700E9138E /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427183132424E8A700E9138E /* Window.swift */; };
+		427183162424F54700E9138E /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427183152424F54700E9138E /* Animation.swift */; };
+		4272451C24251A79009E0D3C /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 4272451B24251A79009E0D3C /* sounds */; };
+		4272451E242525CD009E0D3C /* Starling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272451D242525CD009E0D3C /* Starling.swift */; };
+		4296B68424250F3400AF0D5B /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296B68324250F3400AF0D5B /* OptionsViewController.swift */; };
+		4296B68624250FB800AF0D5B /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296B68524250FB800AF0D5B /* Options.swift */; };
+		4296B688242517CA00AF0D5B /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296B687242517CA00AF0D5B /* SoundEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +30,15 @@
 		427183062424E0CC00E9138E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		427183082424E0CC00E9138E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427183092424E0CC00E9138E /* CrashBandicooter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrashBandicooter.entitlements; sourceTree = "<group>"; };
+		4271830F2424E3DE00E9138E /* CrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashView.swift; sourceTree = "<group>"; };
+		427183112424E56B00E9138E /* tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiles; sourceTree = "<group>"; };
+		427183132424E8A700E9138E /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		427183152424F54700E9138E /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		4272451B24251A79009E0D3C /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+		4272451D242525CD009E0D3C /* Starling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starling.swift; sourceTree = "<group>"; };
+		4296B68324250F3400AF0D5B /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		4296B68524250FB800AF0D5B /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		4296B687242517CA00AF0D5B /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +72,20 @@
 			isa = PBXGroup;
 			children = (
 				427182FF2424E0C700E9138E /* AppDelegate.swift */,
+				427183132424E8A700E9138E /* Window.swift */,
 				427183012424E0C700E9138E /* ViewController.swift */,
+				4271830F2424E3DE00E9138E /* CrashView.swift */,
+				4296B68524250FB800AF0D5B /* Options.swift */,
+				4296B68324250F3400AF0D5B /* OptionsViewController.swift */,
+				4296B687242517CA00AF0D5B /* SoundEffect.swift */,
+				427183152424F54700E9138E /* Animation.swift */,
+				4272451D242525CD009E0D3C /* Starling.swift */,
 				427183032424E0CC00E9138E /* Assets.xcassets */,
 				427183052424E0CC00E9138E /* Main.storyboard */,
 				427183082424E0CC00E9138E /* Info.plist */,
 				427183092424E0CC00E9138E /* CrashBandicooter.entitlements */,
+				4272451B24251A79009E0D3C /* sounds */,
+				427183112424E56B00E9138E /* tiles */,
 			);
 			path = CrashBandicooter;
 			sourceTree = "<group>";
@@ -121,7 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427183122424E56B00E9138E /* tiles in Resources */,
 				427183042424E0CC00E9138E /* Assets.xcassets in Resources */,
+				4272451C24251A79009E0D3C /* sounds in Resources */,
 				427183072424E0CC00E9138E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +163,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				427183022424E0C700E9138E /* ViewController.swift in Sources */,
+				427183162424F54700E9138E /* Animation.swift in Sources */,
+				4296B68424250F3400AF0D5B /* OptionsViewController.swift in Sources */,
 				427183002424E0C700E9138E /* AppDelegate.swift in Sources */,
+				4272451E242525CD009E0D3C /* Starling.swift in Sources */,
+				427183102424E3DE00E9138E /* CrashView.swift in Sources */,
+				427183142424E8A700E9138E /* Window.swift in Sources */,
+				4296B68624250FB800AF0D5B /* Options.swift in Sources */,
+				4296B688242517CA00AF0D5B /* SoundEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
