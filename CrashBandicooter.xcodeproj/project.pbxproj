@@ -308,7 +308,7 @@
 				CODE_SIGN_ENTITLEMENTS = CrashBandicooter/CrashBandicooter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2XN7W4EZ34;
+				DEVELOPMENT_TEAM = FR4Z9GU3K2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CrashBandicooter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +328,7 @@
 				CODE_SIGN_ENTITLEMENTS = CrashBandicooter/CrashBandicooter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2XN7W4EZ34;
+				DEVELOPMENT_TEAM = FR4Z9GU3K2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CrashBandicooter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
