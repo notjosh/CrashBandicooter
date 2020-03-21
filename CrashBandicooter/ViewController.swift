@@ -117,7 +117,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction
-    private func handleMenuOptions(sender: Any) {
+    func handleMenuOptions(sender: Any) {
         optionsViewController.update(with: options)
         optionsViewController.delegate = self
 
