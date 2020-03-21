@@ -73,17 +73,17 @@ class ViewController: NSViewController {
     }
 
     @IBAction
-    private func handleMenuStartDance(sender: Any) {
+    func handleMenuStartDance(sender: Any) {
         crashView.start()
     }
 
     @IBAction
-    private func handleMenuStop(sender: Any) {
+    func handleMenuStop(sender: Any) {
         crashView.stop()
     }
 
     @IBAction
-    private func handleMenuRandom(sender: Any) {
+    func handleMenuRandom(sender: Any) {
         guard let random = Animation.allCases.randomElement() else {
             return
         }
@@ -92,27 +92,27 @@ class ViewController: NSViewController {
     }
 
     @IBAction
-    private func handleMenuJiggle(sender: Any) {
+    func handleMenuJiggle(sender: Any) {
         crashView.start(startingAt: .jiggle)
     }
 
     @IBAction
-    private func handleMenuFootStomp(sender: Any) {
+    func handleMenuFootStomp(sender: Any) {
         crashView.start(startingAt: .footStomp)
     }
 
     @IBAction
-    private func handleMenuPelvicThrust(sender: Any) {
+    func handleMenuPelvicThrust(sender: Any) {
         crashView.start(startingAt: .pelvicThrust)
     }
 
     @IBAction
-    private func handleMenuTurnAround(sender: Any) {
+    func handleMenuTurnAround(sender: Any) {
         crashView.start(startingAt: .turnAround)
     }
 
     @IBAction
-    private func handleMenuBehindYou(sender: Any) {
+    func handleMenuBehindYou(sender: Any) {
         crashView.start(startingAt: .behindYou)
     }
 
@@ -126,7 +126,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction
-    private func handleMenuAboutCrash(sender: Any) {
+    func handleMenuAboutCrash(sender: Any) {
         aboutWindowController.showWindow(self)
         aboutWindowController.window?.orderFront(self)
     }

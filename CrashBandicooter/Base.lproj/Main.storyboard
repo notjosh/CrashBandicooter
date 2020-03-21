@@ -14,40 +14,97 @@
                         <items>
                             <menuItem title="CrashBandicooter" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="CrashBandicooter" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="CrashBandicooter" systemMenu="apple" id="iVx-Uk-wAb">
                                     <items>
-                                        <menuItem title="Preferences" keyEquivalent="," id="Olw-nP-bQN">
-                                            <connections>
-                                                <action selector="showOptionsWithSender:" target="Voe-Tx-rLC" id="YUb-I3-ct5"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="395-iJ-Yqc"/>
-                                        <menuItem title="Services" id="NMo-om-nkz">
+                                        <menuItem title="About CrashBandicooter" id="fx7-qc-NjC">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide CrashBandicooter" keyEquivalent="h" id="gPS-Xc-efu">
                                             <connections>
-                                                <action selector="hide:" target="Ady-hI-5gd" id="tl7-M9-kI8"/>
+                                                <action selector="showAboutWithSender:" target="Voe-Tx-rLC" id="reg-Rc-yZh"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                        <menuItem isSeparatorItem="YES" id="wSa-RH-n3W"/>
+                                        <menuItem title="Preferences..." keyEquivalent="," id="bDu-8M-vkt">
+                                            <connections>
+                                                <action selector="showOptionsWithSender:" target="Voe-Tx-rLC" id="Zzl-TK-I7r"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VHl-hQ-enq"/>
+                                        <menuItem title="Services" id="GAh-9E-zYi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="ivI-TS-Qa0"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="5hK-vR-Bcl"/>
+                                        <menuItem title="Hide CrashBandicooter" keyEquivalent="h" id="3PM-As-EYT">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="V3k-Qb-XfU"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="zUe-XU-S9B">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
-                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="kFg-Lp-g5j"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                        <menuItem title="Show All" id="RBV-Kx-1fx">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="PVu-DQ-a5i"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit CrashBandicooter" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem isSeparatorItem="YES" id="0Ix-tL-J57"/>
+                                        <menuItem title="Quit CrashBandicooter" keyEquivalent="q" id="ZO7-tZ-6l9">
                                             <connections>
-                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Yqi-kb-uhh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Dance" id="7jS-Tj-pL3">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Dance" id="4Q3-ky-4pG">
+                                    <items>
+                                        <menuItem title="Start Dance" keyEquivalent="," id="oIx-jw-xMj">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="handleMenuStartDanceWithSender:" target="Voe-Tx-rLC" id="jeV-vI-Ejs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Stop" keyEquivalent="." id="NOe-Qt-a7g">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="handleMenuStopWithSender:" target="Voe-Tx-rLC" id="GPb-Qx-qVg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="PGA-Ld-u6X"/>
+                                        <menuItem title="Random" keyEquivalent="r" id="v4W-pF-jsO">
+                                            <connections>
+                                                <action selector="handleMenuRandomWithSender:" target="Voe-Tx-rLC" id="zfh-em-0k7"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Jiggle" keyEquivalent="1" id="uVj-pj-8sk">
+                                            <connections>
+                                                <action selector="handleMenuJiggleWithSender:" target="Voe-Tx-rLC" id="yru-Kx-6FE"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Foot Stomp" keyEquivalent="2" id="Oyk-66-y3B">
+                                            <connections>
+                                                <action selector="handleMenuFootStompWithSender:" target="Voe-Tx-rLC" id="0Fj-Uy-dqb"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Pelvic Thrust" keyEquivalent="3" id="hFK-PZ-3D0">
+                                            <connections>
+                                                <action selector="handleMenuPelvicThrustWithSender:" target="Voe-Tx-rLC" id="wN7-Ox-bZL"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Turn Around" keyEquivalent="4" id="eqc-sg-gx3">
+                                            <connections>
+                                                <action selector="handleMenuTurnAroundWithSender:" target="Voe-Tx-rLC" id="e2t-cA-HeE"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Behind You" keyEquivalent="5" id="afR-pM-xLa">
+                                            <connections>
+                                                <action selector="handleMenuBehindYouWithSender:" target="Voe-Tx-rLC" id="ncR-22-2oO"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -127,6 +184,7 @@
                                 <action selector="handleMenuStopWithSender:" target="XfG-lQ-9wD" id="j0Y-WY-NW7"/>
                             </connections>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="ffR-i2-LLO"/>
                         <menuItem title="Random" id="diY-wj-KHU">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
@@ -163,6 +221,7 @@
                                 <action selector="handleMenuBehindYouWithSender:" target="XfG-lQ-9wD" id="fF4-a3-AMa"/>
                             </connections>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="ofZ-Li-w6s"/>
                         <menuItem title="Options" id="aAg-pT-6Sh">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
